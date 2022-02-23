@@ -36,6 +36,49 @@ fun main() {
     }
     */
 
+    print("Digite um número: ")
+    var n1 = readLine()!!.toInt()
+    print("Digite um número: ")
+    var n2 = readLine()!!.toInt()
+    print("Digite um número: ")
+    var n3 = readLine()!!.toInt()
+
+    //Descobrir qual é o menor número
+    if(n1 < n2 && n1 < n3) {
+        println(n1)
+        n1 += n1 + n2 + n3
+    }else if(n2 < n1 && n2 < n3) {
+        println(n2)
+        n2 += n1 + n2 + n3
+    }else {
+        println(n3)
+        n3 += n1 + n2 + n3
+    }
+
+    // descobrir o segundo
+    if(n1 < n2 && n1 < n3) {
+        println(n1)
+        n1 += n1 + n2 + n3
+    }else if(n2 < n1 && n2 < n3) {
+        println(n2)
+        n2 += n1 + n2 + n3
+    }else {
+        println(n3)
+        n3 += n1 + n2 + n3
+    }
+
+    // descobrir o terceiro
+    if(n1 < n2 && n1 < n3) {
+        println(n1)
+        n1 += n1 + n2 + n3
+    }else if(n2 < n1 && n2 < n3) {
+        println(n2)
+        n2 += n1 + n2 + n3
+    }else {
+        println(n3)
+        n3 += n1 + n2 + n3
+    }
+
 //---------------------------------------------------------------------------------------------------------------
 
     /*Faça um programa que receba a idade de uma pessoa e mostre na saída em qual categoria ela se encontra:
@@ -77,6 +120,7 @@ fun main() {
 
     //5- Faça um programa que o usuário digite um número e o programa retorne o mês referente ao valor.
 
+    /*
     print("Coloque o número de um mês: ")
     val mes = readLine()!!.toInt()
 
@@ -95,5 +139,6 @@ fun main() {
         12 -> println("O mês digitado é Dezembro")
         else -> println("O numero digitado não corresponde a nenhum mês")
     }
+*/
 
 }
