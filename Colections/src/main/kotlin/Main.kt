@@ -1,5 +1,26 @@
 fun main() {
+/*
 
+    val num = arrayOf(5, 10, 15, 20, 25)
+
+    for(i in num) {
+        print("$i ")
+    }
+
+    Insira no list os seguintes números [5, 10, 15, 20, 25].
+
+    Removam o valor 5
+
+    Use um loop para mostrar os valores
+
+    val num = mutableListOf(5, 10, 15, 20, 25)
+
+    num.remove(5)
+
+    for(i in num) {
+        println(i)
+    }
+*/
 
     /*
 
@@ -12,7 +33,7 @@ fun main() {
     Atualizar dados da list.
     Apresentar todos os dados da list.
      */
-/*
+
 
     val estoque = mutableListOf<String>()
 
@@ -54,7 +75,7 @@ fun main() {
             }
             else -> continue
         }
-*/
+
 
     }
 
