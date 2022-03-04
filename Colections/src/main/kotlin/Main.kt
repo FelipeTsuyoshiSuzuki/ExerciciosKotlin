@@ -34,6 +34,7 @@ fun main() {
     Apresentar todos os dados da list.
      */
 
+/*
 
     val estoque = mutableListOf<String>()
 
@@ -76,8 +77,9 @@ fun main() {
             else -> continue
         }
 
-
     }
+*/
+
 
 
 }
