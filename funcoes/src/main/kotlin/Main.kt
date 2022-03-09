@@ -7,9 +7,9 @@ fun main() {
     print("Digite o segundo número: ")
     val n2 = readLine()!!.toDouble()
 
-    val result = ver(op, n1, n2)
+    val result = Calculadora.menu(op, n1, n2)
 
-    escrever(n1,n2, result, op)
+    Calculadora.escrever(n1,n2, result, op)
 
 }
 

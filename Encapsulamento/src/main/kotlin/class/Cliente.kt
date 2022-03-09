@@ -29,54 +29,29 @@ data class Cliente (var nome: String) {
     }
 
 
-    private val listaCompras = mutableListOf<String>()
+    val listaCompras = mutableListOf<String>()
 
     // Adicionar item à lista de compras
-    fun addCompra () {
-        while(true) {
-
-            print("Gostaria de adicionar mais alguma coisa sim/nao ")
-            var resp = readLine()!!.uppercase()
-            if(resp == "NAO" || resp == "NÃO") {
-                break
-            }
-
-            print("Qual item você gostaria de adicionar ao carrinho: ")
-            var item = readLine()!!.uppercase()
-
+    // Só podem ser adicionados itens que estão no estoque
+    fun addCompra (item: String) {
             if (item.isEmpty() || !(Estoque.existe(item))) {
-                println("Produto inválido")
+                println("\nProduto inválido")
             } else {
                 listaCompras.add(item)
-                println("Item adicionado com sucesso")
+                println("\nItem adicionado com sucesso")
             }
 
-
-        }
     }
 
     // Remover item do carrinho de compras
-    fun removeCompra() {
-        while(true) {
-
-            print("Gostaria de remover mais algum item sim/nao ")
-            var resp = readLine()!!.uppercase()
-            if(resp == "NAO" || resp == "NÃO") {
-                break
-            }
-
-            print("Qual item você gostaria de remover do carrinho: ")
-            var item = readLine()!!.uppercase()
-
+    // Só
+    fun removeCompra(item: String) {
             if (item.isEmpty() || !(listaCompras.contains(item))) {
-                println("Este item não existe na lista")
+                println("\nEste item não existe na lista")
             } else {
                 listaCompras.remove(item)
-                println("Item removido com sucesso")
+                println("\nItem removido com sucesso")
             }
-
-
-        }
     }
 
     // Mostrar lista de compras
@@ -101,6 +76,5 @@ data class Cliente (var nome: String) {
             throw Exception("O nome esta vazio")
         }
     }
-
 
 }

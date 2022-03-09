@@ -3,7 +3,10 @@ package `object`
 object Estoque {
 
     // Lista de Produtos do estoque(nome, preço)
-    private val listaProdutos = mutableMapOf("CALÇA" to 70.0, "CAMISA" to 30.0, "TENIS" to 200.0)
+    private val listaProdutos = mutableMapOf(
+        "CALÇA" to 70.0, "CAMISA" to 30.0, "TENIS" to 200.0,
+    "BATATA" to 20.0, "MACARRAO" to 5.0
+    )
 
     // Adicionar produtos com seus nomes e respectivos preços
     fun addProduto() {
